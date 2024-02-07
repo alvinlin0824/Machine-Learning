@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Alvin Lin">
-<meta name="dcterms.date" content="2024-02-06">
+<meta name="dcterms.date" content="2024-02-07">
 
 <title>Classification</title>
 <style>
@@ -25,7 +25,7 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="classification_files/libs/clipboard/clipboard.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script><script src="classification_files/libs/clipboard/clipboard.min.js"></script>
 <script src="classification_files/libs/quarto-html/quarto.js"></script>
 <script src="classification_files/libs/quarto-html/popper.min.js"></script>
 <script src="classification_files/libs/quarto-html/tippy.umd.min.js"></script>
@@ -35,6 +35,9 @@ ul.task-list li input[type="checkbox"] {
 <script src="classification_files/libs/bootstrap/bootstrap.min.js"></script>
 <link href="classification_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="classification_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg==" crossorigin="anonymous"></script>
+
+<script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
 
 
 </head>
@@ -64,7 +67,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">February 6, 2024</p>
+      <p class="date">February 7, 2024</p>
     </div>
   </div>
   
@@ -76,7 +79,45 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<div id="cell-ROC-Curve" class="cell" data-execution_count="42">
+<div id="cell-3" class="cell" data-execution_count="26">
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="classification_files/figure-html/cell-4-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+<div class="cell-output cell-output-display" data-execution_count="26">
+<pre><code>'5'</code></pre>
+</div>
+</div>
+<div id="cell-Concise-matrix" class="cell" data-execution_count="38">
+<div class="cell-output cell-output-stdout">
+<pre><code>Confusion Matrix</code></pre>
+</div>
+<div id="concise-matrix" class="cell-output cell-output-display" data-execution_count="38">
+<pre><code>array([[53892,   687],
+       [ 1891,  3530]], dtype=int64)</code></pre>
+</div>
+</div>
+<div id="accuracy-metrics" class="cell" data-execution_count="32">
+<div class="cell-output cell-output-stdout">
+<pre><code>Precision:  0.8370879772350012
+Recall:  0.6511713705958311
+F1 Score:  0.7325171197343847</code></pre>
+</div>
+</div>
+<div id="cell-PR-Curve" class="cell" data-execution_count="35">
+<div class="cell-output cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="classification_files/figure-html/pr-curve-output-1.png" class="img-fluid figure-img"></p>
+<figcaption>Precision Versus Recall</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<div id="cell-ROC-Curve" class="cell" data-execution_count="37">
 <div class="cell-output cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
